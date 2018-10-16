@@ -26,6 +26,47 @@
 			display: inline;
 			margin: 0px 30px 0px 0px;
 		}
+		.items {
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border: 1px solid gray;
+			position: relative;
+		}
+		#svt {
+			left: 10px;
+			top: 30px;
+		}
+		#center {
+			position: relative;
+			top: 20px;
+			z-index: -1;
+			
+		}
+		#kakao {
+			margin-left: 30px;
+			top: -60px;
+			left: 5px;
+		}
+		#iu {
+			top: -60px;
+			right: 10px;
+		}
+		#rilak {
+			top: -20px;
+			left: -10px;
+		}
+		#tom {
+			top: -20px;
+			left: 40px;
+		}
+		#whole {
+			display: block;
+			text-align: center;
+		}
+		.level {
+			display: block;
+		}
 	</style>
 </head>
 <body>
@@ -35,11 +76,19 @@
 		<a href="favorite.html"><li>My Favorite Things</li></a>
 		<a href="bucket.html"><li>Bucket List</li></a>
 	</ul>
-	<p>제가 좋아하는 것들이에요</p>
-	<img src="./image/kakao.jpg">
-	<img src="./image/rilak.jpg">
-	<img src="./image/iu.png">
-	<img src="./image/seventeen.jpg">
-	<img src="./image/tom.jpg">
+	<div id="whole">
+		<div class="level">
+			<img src="./image/seventeen.jpg" class="items" id="svt">
+		</div>
+		<div class="level">
+			<img src="./image/kakao.jpg" class="items" id="kakao">
+			<img src="./image/bohee.jpg" id="center">
+			<img src="./image/iu.png" class="items" id="iu">
+		</div>
+		<div class="level">
+			<img src="./image/rilak.jpg" class="items" id="rilak">
+			<img src="./image/tom.jpg" class="items" id="tom">
+		</div>
+	</div>
 </body>
 </html>
