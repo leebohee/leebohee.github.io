@@ -5,6 +5,9 @@
 	<title>BOHEE를 소개합니다</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<style>
+		html {
+			height: 100%;
+		}
 		body {
 			font-family: "Montserrat";
 			margin: 0px;
@@ -41,7 +44,6 @@
 			position: relative;
 			top: 20px;
 			z-index: -1;
-			
 		}
 		#kakao {
 			margin-left: 30px;
@@ -60,12 +62,28 @@
 			top: -20px;
 			left: 40px;
 		}
-		#whole {
+		#content {
+			min-height: 100%;
 			display: block;
 			text-align: center;
 		}
 		.level {
 			display: block;
+		}
+		#footer {
+			background: lightgray;
+			color: gray;
+			font-size: 0.75em;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			position: absolute;
+			bottom: 0px;
+			height:60px;
+			width: 100%;
+		}
+		#footer a {
+			margin: 0px 10px;
 		}
 	</style>
 </head>
@@ -76,7 +94,7 @@
 		<a href="favorite.html"><li>My Favorite Things</li></a>
 		<a href="bucket.html"><li>Bucket List</li></a>
 	</ul>
-	<div id="whole">
+	<div id="content">
 		<div class="level">
 			<img src="./image/seventeen.jpg" class="items" id="svt">
 		</div>
@@ -89,6 +107,12 @@
 			<img src="./image/rilak.jpg" class="items" id="rilak">
 			<img src="./image/tom.jpg" class="items" id="tom">
 		</div>
+	</div>
+	<div id="footer">
+		<div><img src="./image/phone.png">&nbsp;&nbsp;+82-10-9996-2520</div>
+		<div><img src="./image/mail.png">&nbsp;&nbsp;bohee46@gmail.com</div>
+		<a href="https://www.facebook.com/profile.php?id=100006346656370"><img src="./image/facebook.png">&nbsp;&nbsp;Facebook</a>
+		<a href="https://github.com/leebohee"><img src="./image/github.png">&nbsp;&nbsp;Github</a>
 	</div>
 </body>
 </html>

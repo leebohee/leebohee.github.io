@@ -1,15 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>BOHEE를 소개합니다</title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<style>
+		html {
+			height: 100%;
+		}
 		body {
 			font-family: "Montserrat";
 			margin: 0px;
 		}
 		#nav {
+			background: white;
+		}
+		ul {
 			margin: 0px;
 			padding: 10px 40px;
 			list-style: none;
@@ -22,31 +28,114 @@
 		a:hover {
 			color: #F4ACB7;
 		}
-		#nav li {
+		ul li {
 			display: inline;
 			margin: 0px 30px 0px 0px;
+		}
+		#content {
+			min-height: 100%;
+			padding: 20px;
+		}
+		table {
+			text-align: center;
+			width: 55%;
+			border-collapse: collapse;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		caption {
+			align: top;
+			margin: 10px;
+		}
+		#label {
+			background-color: #F8CBCB;
+		}
+		.evenrow {
+			background-color: #EEE;
+		}
+		td {
+			padding: 5px;
+		}
+		th {
+			padding: 10px;
+		}
+		#btn {
+			margin-left: 75%;
+			margin-right: 15%;
+			margin-top: 10px;
+		}
+		#footer {
+			background: lightgray;
+			color: gray;
+			font-size: 0.75em;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			position: absolute;
+			bottom: 0px;
+			height:60px;
+			width: 100%;
+		}
+		#footer a {
+			margin: 0px 10px;
 		}
 	</style>
 </head>
 <body>
-	<ul id="nav">
-		<a href="index.html"><li>Home</li></a>
-		<a href="intro.html"><li>About Me</li></a>
-		<a href="favorite.html"><li>My Favorite Things</li></a>
-		<a href="bucket.html"><li>Bucket List</li></a>
-	</ul>
-	<h4>저의 버킷리스트입니다</h4>
-	<ol>
-		<li>휴학하기</li>
-		<li>유럽 한 바퀴 자유여행</li>
-		<li>IU/세븐틴 콘서트 가기</li>
-		<li>명당 자리에 위치한 호텔에서 여의도 불꽃축제 보기</li>
-		<li>미슐랭가이드 초밥 먹기</li>
-		<li>자취하기</li>
-		<li>벚꽃필 때 일본 여행</li>
-		<li>혼자 여행가기</li>
-		<li>패러글라이딩 타보기</li>
-		<li>러시아어 배우기</li>
-	</ol>
+	<div id="nav">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="intro.html"><li>About Me</li></a>
+			<a href="favorite.html"><li>My Favorite Things</li></a>
+			<a href="bucket.html"><li>Bucket List</li></a>
+		</ul>
+	</div>
+	<div id="content">
+		<form action="" method="get">
+			<table>
+				<caption>MY BUCKET LIST</caption>
+				<tr id="label">
+					<th>달성</th> <th>버킷 리스트</th> <th>달성 날짜</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td> <td>휴학하기</td> <td><input type="date"></td>
+				</tr>
+				<tr class="evenrow">
+					<td><input type="checkbox"></td> <td>유럽 한 바퀴 자유여행</td> <td><input type="date"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td> <td>IU/세븐틴 콘서트 가기</td> <td><input type="date"></td>
+				</tr>
+				<tr class="evenrow">
+					<td><input type="checkbox"></td> <td>명당 자리에 위치한 호텔에서 여의도 불꽃축제 보기</td> <td><input type="date"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td> <td>미슐랭가이드 초밥 먹기</td> <td><input type="date"></td>
+				</tr>
+				<tr class="evenrow">
+					<td><input type="checkbox"></td> <td>자취하기</td> <td><input type="date"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td> <td>벚꽃필 때 일본 여행</td> <td><input type="date"></td>
+				</tr>
+				<tr class="evenrow">
+					<td><input type="checkbox"></td> <td>혼자 여행가기</td> <td><input type="date"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"></td> <td>패러글라이딩 타기</td> <td><input type="date"></td>
+				</tr>
+				<tr class="evenrow">
+					<td><input type="checkbox"></td> <td>러시아어 배우기</td> <td><input type="date"></td>
+				</tr>
+			</table>
+			<input type="submit" value="저장" id="btn">
+		</form>
+	</div>
+	<div id="footer">
+		<div><img src="./image/phone.png">&nbsp;&nbsp;+82-10-9996-2520</div>
+		<div><img src="./image/mail.png">&nbsp;&nbsp;bohee46@gmail.com</div>
+		<a href="https://www.facebook.com/profile.php?id=100006346656370"><img src="./image/facebook.png">&nbsp;&nbsp;Facebook</a>
+		<a href="https://github.com/leebohee"><img src="./image/github.png">&nbsp;&nbsp;Github</a>
+	</div>
 </body>
 </html>
