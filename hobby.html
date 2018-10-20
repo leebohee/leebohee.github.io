@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BOHEE를 소개합니다</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<style>
+		html {
+			min-height: 100%;
+		}
+		body {
+			font-family: "Montserrat";
+			margin: 0px;
+			min-height: 100%;
+		}
+		#nav {
+			background: white;
+		}
+		ul {
+			margin: 0px;
+			padding: 10px 40px;
+			list-style: none;
+			border: solid 1px gray;
+		}
+		a {
+			color: gray;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #F4ACB7;
+		}
+		ul li {
+			display: inline;
+			margin: 0px 30px 0px 0px;
+		}
+		#content {
+			min-height: 100%;
+			width: 100%;
+			padding: 0px 20px;
+		}
+		#camera {
+			height: 40px;
+			vertical-align: bottom;
+		}
+		h3 span {
+			font-size: 0.7em;
+		}
+		#main {
+			width: 60%;
+			float: left;
+		}
+		#main_img {
+			text-align: center;
+			width: 100%;
+			border: solid 1px gray;
+		}
+		#main div {
+			position: relative;
+			width: 65px;
+			height: 65px;
+			left: 20px;
+			top: 10%;
+ 			background-image: url("./image/taking_pictures1.png");
+			animation: 10s anim;
+			animation-iteration-count: infinite;
+		}
+		.sub_img {
+			border: solid 1px gray;
+			margin-bottom: 10px;
+			width: 100%;	
+		}
+		.sub_img:hover, #main_img:hover {
+			opacity: 0.4;
+		}
+		#sub_img1 {
+			width: 15%;
+			float: left;
+			padding: 40px 20px 0px 30px;
+		}
+		#sub_img2 {
+			width: 15%;
+			float: left;
+			padding-top: 40px;
+		}
+
+		#footer {
+			clear: both;
+			background: lightgray;
+			color: gray;
+			font-size: 0.75em;
+			text-align: center;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			bottom: 0px;
+			height:60px;
+			width: 100%;
+		}
+		#footer a {
+			margin: 0px 10px;
+		}
+		@keyframes anim {
+			0% {left: 0%; top 0px; background-image: url("./image/taking_pictures1.png");}
+			20% {left: 20%; top 0px; background-image: url("./image/taking_pictures2.png");}
+			40% {left: 40%; top 0px; background-image: url("./image/taking_pictures1.png");}
+			60% {left: 60%; top 0px; background-image: url("./image/taking_pictures2.png");}
+			80% {left: 80%; top 0px; background-image: url("./image/taking_pictures1.png");}
+			100% {left: 100%; top 0px; background-image: url("./image/taking_pictures2.png");}
+		}
+	</style>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="hobby.html"><li>My Hobby</li></a>
+			<a href="favorite.html"><li>My Favorite Things</li></a>
+			<a href="bucket.html"><li>My Bucket List</li></a>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="main">
+			<h3>나는 <img src="./image/camera.png" id="camera">를 좋아해 :) <span>내가 찍은 사진들이야. 클릭해서 확대해봐</span></h3>
+			<a href="./image/bohee1.jpg"><img src="./image/bohee1.jpg" id="main_img"></a>
+			<div></div>
+		</div>
+		<div id="sub_img1">
+			<a href="./image/cookie_monster.jpg"><img src="./image/cookie_monster.jpg" class="sub_img"></a>
+			
+			<a href="./image/pisa.jpg"><img src="./image/pisa.jpg" class="sub_img"></a>
+			<a href="./image/reed.jpg"><img src="./image/reed.jpg" class="sub_img"></a>
+		</div>
+		<div id="sub_img2">
+			<a href="./image/uzb.jpg"><img src="./image/uzb.jpg" class="sub_img"></a>
+			<a href="./image/osaka.jpg"><img src="./image/osaka.jpg" class="sub_img"></a>
+			<a href="./image/temple.jpg"><img src="./image/temple.jpg" class="sub_img"></a>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<div><img src="./image/phone.png">&nbsp;&nbsp;+82-10-9996-2520</div>
+		<div><img src="./image/mail.png">&nbsp;&nbsp;bohee46@gmail.com</div>
+		<a href="https://www.facebook.com/profile.php?id=100006346656370"><img src="./image/facebook.png">&nbsp;&nbsp;Facebook</a>
+		<a href="https://github.com/leebohee"><img src="./image/github.png">&nbsp;&nbsp;Github</a>
+	</div>
+</body>
+</html>
