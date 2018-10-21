@@ -6,28 +6,65 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<style>
 		html {
-			height: 100%;
+			min-height: 100%;
 		}
 		body {
 			font-family: "Montserrat";
 			margin: 0px;
+			min-height: 100%;
+		}
+		#nav {
+			height: 120px;
+			background: white;
 		}
 		ul {
-			margin: 0px;
-			padding: 10px 40px;
+			margin-left: 20px;
+			margin-top: 30px;
+			padding: 10px;
 			list-style: none;
-			border: solid 1px gray;
+			display: inline;
+			float: left;
 		}
 		a {
 			color: gray;
 			text-decoration: none;
 		}
-		a:hover {
+		a:hover, #content a:hover {
 			color: #F4ACB7;
 		}
 		li {
 			display: inline;
 			margin: 0px 30px 0px 0px;
+		}
+		#content {
+			width: 100%;
+			min-height: 100%;
+		}
+		#content a {
+			font-weight: bold;
+			color: black;
+		}
+		#content1 {
+			background: rgba(244, 172, 183, 0.5);
+			width: 100%;
+			height: 250px;
+			color: white;
+			text-align: center;
+			padding-top: 20px;
+		}
+		#content2 {
+			width: 100%;
+			height: 300px;
+		}
+		.menu {
+			width: 32%;
+			height: 85%;
+			float: left;
+			margin: 20px 5px;
+			text-align: center;
+		}
+		.menu img {
+			height: 80px;
 		}
 		#footer {
 			background: lightgray;
@@ -36,7 +73,6 @@
 			text-align: center;
 			padding-top: 10px;
 			padding-bottom: 10px;
-			position: absolute;
 			bottom: 0px;
 			height:60px;
 			width: 100%;
@@ -44,15 +80,32 @@
 		#footer a {
 			margin: 0px 10px;
 		}
+		#logo {
+			height: 100px;
+			margin-left: 20px;
+			margin-top: 5px;
+			float: left;
+		}
 	</style>
 </head>
 <body>
-	<ul>
-		<a href="index.html"><li>Home</li></a>
-		<a href="hobby.html"><li>My Hobby</li></a>
-		<a href="favorite.html"><li>My Favorite Things</li></a>
-		<a href="bucket.html"><li>My Bucket List</li></a>
-	</ul>
+	<div id="nav">
+		<a href="index.html"><img src="./image/logo.png" id="logo"></a>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="hobby.html"><li>My Hobby</li></a>
+			<a href="favorite.html"><li>My Favorite Things</li></a>
+			<a href="bucket.html"><li>My Bucket List</li></a>
+		</ul>
+	</div>
+	<div id="content">
+		<div id="content1"><h1>Welcome to BOHEE's Home</h1>Do you want to know me?</div>
+		<div id="content2">
+			<div class="menu"><img src="./image/hobby.png"><div>My hobby is <a href="hobby.html">taking pictures</a><br>Would you like to see it?</div></div>
+			<div class="menu"><img src="./image/favorite.png"><div>Don't you wonder <a href="favorite.html">what makes me happy</a>?</div></div>
+			<div class="menu"><img src="./image/bucket.png"><div>I really want to do <a href="bucket.html">these</a> in my life</div></div>
+		</div>
+	</div>
 	<div id="footer">
 		<div><img src="./image/phone.png">&nbsp;&nbsp;+82-10-9996-2520</div>
 		<div><img src="./image/mail.png">&nbsp;&nbsp;bohee46@gmail.com</div>

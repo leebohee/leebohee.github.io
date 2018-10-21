@@ -12,11 +12,17 @@
 			font-family: "Montserrat";
 			margin: 0px;
 		}
+		#nav {
+			height: 120px;
+			background: white;
+		}
 		ul {
-			margin: 0px;
-			padding: 10px 40px;
+			margin-left: 20px;
+			margin-top: 30px;
+			padding: 10px;
 			list-style: none;
-			border: solid 1px gray;
+			display: inline;
+			float: left;
 		}
 		a {
 			color: gray;
@@ -84,15 +90,24 @@
 		#footer a {
 			margin: 0px 10px;
 		}
+		#logo {
+			height: 100px;
+			margin-left: 20px;
+			margin-top: 5px;
+			float: left;
+		}
 	</style>
 </head>
 <body>
-	<ul>
-		<a href="index.html"><li>Home</li></a>
-		<a href="hobby.html"><li>My Hobby</li></a>
-		<a href="favorite.html"><li>My Favorite Things</li></a>
-		<a href="bucket.html"><li>My Bucket List</li></a>
-	</ul>
+	<div id="nav">
+		<a href="index.html"><img src="./image/logo.png" id="logo"></a>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="hobby.html"><li>My Hobby</li></a>
+			<a href="favorite.html"><li>My Favorite Things</li></a>
+			<a href="bucket.html"><li>My Bucket List</li></a>
+		</ul>
+	</div>
 	<div id="content">
 		<div class="level">
 			<img src="./image/seventeen.jpg" class="items" id="svt">

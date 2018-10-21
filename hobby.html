@@ -14,13 +14,16 @@
 			min-height: 100%;
 		}
 		#nav {
+			height: 120px;
 			background: white;
 		}
 		ul {
-			margin: 0px;
-			padding: 10px 40px;
+			margin-left: 20px;
+			margin-top: 30px;
+			padding: 10px;
 			list-style: none;
-			border: solid 1px gray;
+			display: inline;
+			float: left;
 		}
 		a {
 			color: gray;
@@ -106,10 +109,17 @@
 			80% {left: 80%; top 0px; background-image: url("./image/taking_pictures1.png");}
 			100% {left: 100%; top 0px; background-image: url("./image/taking_pictures2.png");}
 		}
+		#logo {
+			height: 100px;
+			margin-left: 20px;
+			margin-top: 5px;
+			float: left;
+		}
 	</style>
 </head>
 <body>
 	<div id="nav">
+		<a href="index.html"><img src="./image/logo.png" id="logo"></a>
 		<ul>
 			<a href="index.html"><li>Home</li></a>
 			<a href="hobby.html"><li>My Hobby</li></a>
@@ -120,19 +130,19 @@
 	<div id="content">
 		<div id="main">
 			<h3>나는 <img src="./image/camera.png" id="camera">를 좋아해 :) <span>내가 찍은 사진들이야. 클릭해서 확대해봐</span></h3>
-			<a href="./image/bohee1.jpg"><img src="./image/bohee1.jpg" id="main_img"></a>
+			<a href="img_bohee.html" target="_blank"><img src="./image/bohee1.jpg" id="main_img"></a>
 			<div></div>
 		</div>
 		<div id="sub_img1">
-			<a href="./image/cookie_monster.jpg"><img src="./image/cookie_monster.jpg" class="sub_img"></a>
+			<a href="img_cookie.html" target="_blank"><img src="./image/cookie_monster.jpg" class="sub_img"></a>
 			
-			<a href="./image/pisa.jpg"><img src="./image/pisa.jpg" class="sub_img"></a>
-			<a href="./image/reed.jpg"><img src="./image/reed.jpg" class="sub_img"></a>
+			<a href="img_pisa.html" target="_blank"><img src="./image/pisa.jpg" class="sub_img"></a>
+			<a href="img_reed.html" target="_blank"><img src="./image/reed.jpg" class="sub_img"></a>
 		</div>
 		<div id="sub_img2">
-			<a href="./image/uzb.jpg"><img src="./image/uzb.jpg" class="sub_img"></a>
-			<a href="./image/osaka.jpg"><img src="./image/osaka.jpg" class="sub_img"></a>
-			<a href="./image/temple.jpg"><img src="./image/temple.jpg" class="sub_img"></a>
+			<a href="img_uzb.html" target="_blank"><img src="./image/uzb.jpg" class="sub_img"></a>
+			<a href="img_osaka.html" target="_blank"><img src="./image/osaka.jpg" class="sub_img"></a>
+			<a href="img_temple.html" target="_blank"><img src="./image/temple.jpg" class="sub_img"></a>
 			
 		</div>
 	</div>
